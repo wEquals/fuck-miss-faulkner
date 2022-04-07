@@ -1,0 +1,42 @@
+// See https://aka.ms/new-console-template for more information
+using System.Net;
+using System.IO;
+using System.Windows;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Net;
+
+//fake downloads
+Console.WriteLine("Right click OR Enter to begin");
+Console.ReadKey(true); ConsoleKeyInfo key = Console.ReadKey(true);
+if (key.Key != ConsoleKey.Enter) ;
+Console.WriteLine("Starting the download. Please be patient.");
+Task.Delay(1200).Wait();
+Console.WriteLine("Downloading DLLs.....");
+Task.Delay(12000).Wait();
+Console.WriteLine("Downloading Executables.....");
+Task.Delay(12000).Wait();
+Console.WriteLine("Downloading Bin.....");
+Task.Delay(12004).Wait();
+Console.WriteLine("Downloading Workspace.....");
+Task.Delay(12000).Wait();
+Console.WriteLine("Fetching some stuff from github.");
+Task.Delay(18000).Wait();
+Console.WriteLine("Downloading Bunifu");
+Task.Delay(12004).Wait();
+Console.WriteLine("Downloading User Interface");
+Task.Delay(12004).Wait();
+
+// Get the Name of HOST  
+string hostName = Dns.GetHostName();
+Console.WriteLine(hostName);
+
+// Get the IP from GetHostByName method of dns class.
+string IP = Dns.GetHostByName(hostName).AddressList[0].ToString();
+Console.WriteLine("Error has occured. Name of error is : " + IP);
+//prints an error to her console and she will see and read
+Console.WriteLine("Please send an email to legoclapper99@gmail.com for further help. Authorisation required. ERROR Code : " + IP);
+
+//written in C# by equals
